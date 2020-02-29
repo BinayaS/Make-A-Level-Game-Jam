@@ -24,3 +24,7 @@ jumpFeatheringTimer = 0;
 
 xScale = image_xscale;
 yScale = image_yscale;
+angle = image_angle;
+targetAngle = 0;
+
+dead = false;

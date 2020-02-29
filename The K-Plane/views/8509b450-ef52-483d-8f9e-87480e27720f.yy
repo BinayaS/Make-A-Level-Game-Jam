@@ -10,7 +10,14 @@
         "e4e7e79d-7a35-4385-8c7e-c1116f05c685",
         "9fe98f26-b53f-44e9-bb79-fbb24b69ee1b",
         "103eadf2-32bb-4b43-bca5-d2a95f385711",
-        "e89bb6ba-0634-4209-a017-a3d7cd2262d7"
+        "e89bb6ba-0634-4209-a017-a3d7cd2262d7",
+        "f5210c32-1f6d-4f56-ac61-4bc45c03c4df",
+        "8368b93c-1d55-49ec-bcf0-642de11c5c8e",
+        "3c431a23-3787-4e24-be96-06682bfe9480",
+        "d7ce77ee-e57a-4f55-89e3-036bed742fd0",
+        "d7164bda-6040-42de-9647-2ed078f708a6",
+        "cde7d86e-ef46-44ef-9edb-4b032312a26b",
+        "0c098df3-c01b-403c-81ab-ba760869086e"
     ],
     "filterType": "GMSprite",
     "folderName": "sprites",

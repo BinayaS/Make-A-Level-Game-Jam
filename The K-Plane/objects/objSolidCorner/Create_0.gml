@@ -20,11 +20,11 @@ if(place_meeting(x, bbox_bottom + 1, objSolid)) {
 }
 
 if(!top && !right) {
-	sprite_index = sprSolidSlopeBottomLeft;	
+	sprite_index = sprSolidSlopeBottomLeft;
 } else if(!top && !left) {
 	sprite_index = sprSolidSlopeBottomRight;
 } else if(!bottom && !right) {
-	sprite_index = sprSolidSlopeTopLeft;	
+	sprite_index = sprSolidSlopeTopLeft;
 } else if(!bottom && !left) {
 	sprite_index = sprSolidSlopeTopRight;
 }
