@@ -1,8 +1,8 @@
 //Input
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
-jump = keyboard_check_pressed(ord("K"));
-shoot = keyboard_check(ord("J"));
+jump = keyboard_check_pressed(ord("K")) || keyboard_check_pressed(vk_space);
+//shoot = keyboard_check(ord("J"));
 var horizontal = right - left;
 
 if(!dead) {
@@ -137,12 +137,14 @@ if(!dead) {
 
 	if(onWall == 0) {
 		if(hspd > 0) {
-			targetAngle = -15;	
+			targetAngle = lerp(targetAngle, -15, 0.2);
 		} else if(hspd < 0) {
-			targetAngle = 15;
+			targetAngle = lerp(targetAngle, 15, 0.2);
 		} else {
-			targetAngle = 0;
+			targetAngle = lerp(targetAngle, 0, 0.2);
 		}
+	} else {
+		targetAngle = lerp(targetAngle, 0, 0.2);
 	}
 
 	//Reset scale
@@ -152,6 +154,11 @@ if(!dead) {
 	#endregion
 }
 
+audio_listener_position(x, y, 0);
+
 if(dead && !audio_is_playing(sndPlayerDeath)) {
-	game_restart();
+	dead = false;
+	objMusic.backgroundMusic = true;
+	x = spawnX;
+	y = spawnY;
 }

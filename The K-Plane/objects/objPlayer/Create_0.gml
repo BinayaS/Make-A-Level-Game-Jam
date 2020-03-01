@@ -1,3 +1,6 @@
+spawnX = x;
+spawnY = y;
+
 hspd = 0;
 vspd = 0;
 
@@ -28,3 +31,5 @@ angle = image_angle;
 targetAngle = 0;
 
 dead = false;
+
+audio_falloff_set_model(audio_falloff_linear_distance);

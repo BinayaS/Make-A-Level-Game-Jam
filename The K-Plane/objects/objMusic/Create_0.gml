@@ -1,0 +1,1 @@
+backgroundMusic = true;

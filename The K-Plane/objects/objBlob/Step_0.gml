@@ -19,6 +19,9 @@ if(place_meeting(x, y + 1, objSolid)) {
 	if(!onGround) {
 		xScale = image_xscale*1.4;
 		yScale = image_yscale*0.8;
+		if(distance_to_object(objPlayer) < 1080/2) {
+			audio_play_sound(sndBlobLand, 50, false);
+		}
 	}
 	onGround = true;
 } else {
@@ -27,7 +30,7 @@ if(place_meeting(x, y + 1, objSolid)) {
 
 vspd += grav;
 
-if(place_meeting(x + 1, y, objSolid) || place_meeting(x - 1, y, objSolid)) {
+if(place_meeting(x + 1, y, objSolidBlock) || place_meeting(x - 1, y, objSolidBlock)) {
 	if(!flipping) {
 		jumpHspd *= -1;
 	}
